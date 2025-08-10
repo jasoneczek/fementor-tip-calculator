@@ -8,9 +8,73 @@
 }
 
 :root {
+  /* === TYPOGRAPHY === */
   --ff-main: "Space Mono", sans-serif;
+  --fw-main: 700;
+  --fs-xsm: 0.8125rem;
+  --fs-sm: 1rem;
+  --fs-md: 1.25rem;
+  --fs-lg: 1.5rem;
+  --fs-xlg: 2rem;
+  --fs-xxlg: 3rem;
+  --fs-fluid: clamp(
+    var(--fs-xlg),
+    1.647887323943662rem + 1.5023474178403755vw,
+    var(--fs-xxlg)
+  );
+
+  --fs-output-span: var(--fs-xsm);
+  --fs-form-label: var(--fs-sm);
+  --fs-output-label: var(--fs-sm);
+  --fs-error-msg: var(--fs-sm);
+  --fs-button-primary: var(--fs-md);
+  --fs-form-input: var(--fs-lg);
+  --fs-output: var(--fs-fluid);
+
+  /* === COLORS === */
+  --clr-green-400: hsl(172, 67%, 45%);
+  --clr-green-750: hsl(183, 79%, 24%);
+  --clr-green-900: hsl(183, 100%, 15%);
+  --clr-grey-50: hsl(189, 47%, 97%);
+  --clr-grey-200: hsl(185, 41%, 84%);
+  --clr-grey-400: hsl(184, 14%, 56%);
+  --clr-grey-500: hsl(186, 14%, 43%);
+  --clr-orange-400: hsl(13, 70%, 60%);
+  --clr-white: hsl(0, 100%, 100%);
+
+  /* === BACKGROUNDS === */
+  --clr-bg-main: var(--clr-grey-200);
+  --clr-bg-bill-container: var(--clr-white);
+  --clr-bg-output-container: var(--clr-green-900);
+
+  --clr-bg-form-input: var(--clr-grey-50);
+  --clr-bg-form-input-radio: var(--clr-green-900);
+  --clr-bg-form-input-radio-active: var(--clr-green-400);
+  --clr-bg-form-input-radio-custom: var(--clr-grey-50);
+
+  --clr-bg-button-primary: var(--clr-green-400);
+  --clr-bg-button-primary-disabled: var(--clr-green-750);
+
+  /* === TEXT === */
+  --clr-text-form-label: var(--clr-grey-500);
+  --clr-text-form-input-placeholder: var(--clr-green-200);
+
+  --clr-text-form-input: var(--clr-green-900);
+  --clr-text-form-input-radio: var(--clr-white);
+  --clr-text-form-input-radio-active: var(--clr-green-900);
+  --clr-text-form-input-radio-custom: var(--clr-grey-500);
+  --clr-text-form-error: var(--clr-orange-400);
+
+  --clr-text-button-primary: var(--clr-green-900);
+
+  /* === OUTPUT === */
+  --clr-text-output-label: var(--clr-white);
+  --clr-text-output-span: var(--clr-grey-400);
+  --clr-text-output-amounts: var(--clr-green-400);
 }
 
 body {
+  background-color: var(--clr-bg-main);
   font-family: var(--ff-main);
+  font-weight: var(--fw-main);
 }
