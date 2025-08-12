@@ -357,10 +357,13 @@ body {
   opacity: 0;
 }
 
+/* === OUTPUT === */
 .output {
   background-color: var(--clr-bg-output-container);
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  display: grid;
+  gap: 1.5rem;
 
   @media (width >= 48rem) {
     padding-inline: 3rem;
@@ -373,6 +376,31 @@ body {
     padding-inline: 2.5rem;
     gap: 3rem;
   }
+}
+
+.output-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.output-label {
+  display: grid;
+}
+
+.output-label span:first-child {
+  font-size: var(--fs-output-label);
+  color: var(--clr-text-output-label);
+}
+
+.output-label span:last-child {
+  font-size: var(--fs-output-span);
+  color: var(--clr-text-output-span);
+}
+
+.output-amount {
+  font-size: var(--fs-output);
+  color: var(--clr-text-output-amounts);
 }
 
 .attribution {
